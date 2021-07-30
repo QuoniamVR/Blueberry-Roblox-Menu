@@ -1,0 +1,591 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BlueberryAllInOne = Instance.new("ScreenGui")
+local Radio = Instance.new("Frame")
+local Start = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Stop = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local SongID = Instance.new("TextBox")
+local MainFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Logo = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local Version = Instance.new("TextLabel")
+local RadioOpen = Instance.new("TextButton")
+local KickMenuOpen = Instance.new("TextButton")
+local KillMenuOpen = Instance.new("TextButton")
+local SpeedMenuOpen = Instance.new("TextButton")
+local FPSMenuOpen = Instance.new("TextButton")
+local KickMenu = Instance.new("Frame")
+local Input = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local Button = Instance.new("TextButton")
+local Reason = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local KillMenu = Instance.new("ImageLabel")
+local PlayerName = Instance.new("TextBox")
+local UICorner_8 = Instance.new("UICorner")
+local Kill = Instance.new("TextButton")
+local Kill_Roundify_12px = Instance.new("ImageLabel")
+local WalkspeedMenu = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+local FPSCounterText = Instance.new("TextLabel")
+local OpenButton = Instance.new("TextButton")
+local UIGradient_4 = Instance.new("UIGradient")
+local CloseButton = Instance.new("TextButton")
+local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_11 = Instance.new("UICorner")
+
+--Properties:
+
+BlueberryAllInOne.Name = "BlueberryAllInOne"
+BlueberryAllInOne.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BlueberryAllInOne.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Radio.Name = "Radio"
+Radio.Parent = BlueberryAllInOne
+Radio.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Radio.BackgroundTransparency = 0.250
+Radio.Position = UDim2.new(0.568513095, 0, 0.646590889, 0)
+Radio.Size = UDim2.new(0, 160, 0, 165)
+Radio.Visible = false
+
+Start.Name = "Start"
+Start.Parent = Radio
+Start.BackgroundColor3 = Color3.fromRGB(21, 158, 0)
+Start.Position = UDim2.new(0.182938397, 0, 0.460101098, 0)
+Start.Size = UDim2.new(0, 100, 0, 44)
+Start.Font = Enum.Font.SourceSans
+Start.Text = ""
+Start.TextColor3 = Color3.fromRGB(255, 255, 255)
+Start.TextScaled = true
+Start.TextSize = 14.000
+Start.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = Start
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 0))}
+UIGradient.Parent = Start
+
+Stop.Name = "Stop"
+Stop.Parent = Radio
+Stop.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Stop.Position = UDim2.new(0.183116421, 0, 0.728788018, 0)
+Stop.Size = UDim2.new(0, 100, 0, 44)
+Stop.Font = Enum.Font.SourceSans
+Stop.Text = ""
+Stop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stop.TextScaled = true
+Stop.TextSize = 14.000
+Stop.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 15)
+UICorner_2.Parent = Stop
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 0))}
+UIGradient_2.Parent = Stop
+
+UICorner_3.CornerRadius = UDim.new(0, 15)
+UICorner_3.Parent = Radio
+
+SongID.Name = "SongID"
+SongID.Parent = Radio
+SongID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SongID.BackgroundTransparency = 1.000
+SongID.Position = UDim2.new(0, 0, 0.139393941, 0)
+SongID.Size = UDim2.new(0, 160, 0, 27)
+SongID.Font = Enum.Font.FredokaOne
+SongID.PlaceholderColor3 = Color3.fromRGB(0, 255, 0)
+SongID.PlaceholderText = "Enter Sound ID Here"
+SongID.Text = ""
+SongID.TextColor3 = Color3.fromRGB(85, 255, 0)
+SongID.TextScaled = true
+SongID.TextSize = 14.000
+SongID.TextWrapped = true
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = BlueberryAllInOne
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BackgroundTransparency = 0.250
+MainFrame.Position = UDim2.new(0.724003971, 0, 0.646969676, 0)
+MainFrame.Size = UDim2.new(0, 284, 0, 233)
+
+UICorner_4.CornerRadius = UDim.new(0, 15)
+UICorner_4.Parent = MainFrame
+
+Logo.Name = "Logo"
+Logo.Parent = MainFrame
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Size = UDim2.new(0, 283, 0, 50)
+Logo.Font = Enum.Font.FredokaOne
+Logo.Text = "Blueberry"
+Logo.TextColor3 = Color3.fromRGB(255, 255, 255)
+Logo.TextScaled = true
+Logo.TextSize = 14.000
+Logo.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = Logo
+
+Version.Name = "Version"
+Version.Parent = MainFrame
+Version.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.838028193, 0, 0.849785388, 0)
+Version.Size = UDim2.new(0, 45, 0, 50)
+Version.Font = Enum.Font.FredokaOne
+Version.Text = "v1.0"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 14.000
+Version.TextWrapped = true
+
+RadioOpen.Name = "RadioOpen"
+RadioOpen.Parent = MainFrame
+RadioOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RadioOpen.BackgroundTransparency = 1.000
+RadioOpen.Position = UDim2.new(0, 0, 0.214592278, 0)
+RadioOpen.Size = UDim2.new(0, 109, 0, 50)
+RadioOpen.Font = Enum.Font.FredokaOne
+RadioOpen.Text = "Radio"
+RadioOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+RadioOpen.TextScaled = true
+RadioOpen.TextSize = 14.000
+RadioOpen.TextWrapped = true
+
+KickMenuOpen.Name = "KickMenuOpen"
+KickMenuOpen.Parent = MainFrame
+KickMenuOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KickMenuOpen.BackgroundTransparency = 1.000
+KickMenuOpen.Position = UDim2.new(0, 0, 0.429184556, 0)
+KickMenuOpen.Size = UDim2.new(0, 109, 0, 50)
+KickMenuOpen.Font = Enum.Font.FredokaOne
+KickMenuOpen.Text = "Kick"
+KickMenuOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+KickMenuOpen.TextScaled = true
+KickMenuOpen.TextSize = 14.000
+KickMenuOpen.TextWrapped = true
+
+KillMenuOpen.Name = "KillMenuOpen"
+KillMenuOpen.Parent = MainFrame
+KillMenuOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillMenuOpen.BackgroundTransparency = 1.000
+KillMenuOpen.Position = UDim2.new(0, 0, 0.643776834, 0)
+KillMenuOpen.Size = UDim2.new(0, 109, 0, 50)
+KillMenuOpen.Font = Enum.Font.FredokaOne
+KillMenuOpen.Text = "Kill"
+KillMenuOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillMenuOpen.TextScaled = true
+KillMenuOpen.TextSize = 14.000
+KillMenuOpen.TextWrapped = true
+
+SpeedMenuOpen.Name = "SpeedMenuOpen"
+SpeedMenuOpen.Parent = MainFrame
+SpeedMenuOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedMenuOpen.BackgroundTransparency = 1.000
+SpeedMenuOpen.Position = UDim2.new(0.612676084, 0, 0.214592278, 0)
+SpeedMenuOpen.Size = UDim2.new(0, 109, 0, 50)
+SpeedMenuOpen.Font = Enum.Font.FredokaOne
+SpeedMenuOpen.Text = "Speed"
+SpeedMenuOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedMenuOpen.TextScaled = true
+SpeedMenuOpen.TextSize = 14.000
+SpeedMenuOpen.TextWrapped = true
+
+FPSMenuOpen.Name = "FPSMenuOpen"
+FPSMenuOpen.Parent = MainFrame
+FPSMenuOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPSMenuOpen.BackgroundTransparency = 1.000
+FPSMenuOpen.Position = UDim2.new(0.612676084, 0, 0.390557945, 0)
+FPSMenuOpen.Size = UDim2.new(0, 109, 0, 50)
+FPSMenuOpen.Font = Enum.Font.FredokaOne
+FPSMenuOpen.Text = "FPS"
+FPSMenuOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPSMenuOpen.TextScaled = true
+FPSMenuOpen.TextSize = 14.000
+FPSMenuOpen.TextWrapped = true
+
+KickMenu.Name = "KickMenu"
+KickMenu.Parent = BlueberryAllInOne
+KickMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KickMenu.BackgroundTransparency = 0.250
+KickMenu.Position = UDim2.new(0.392389029, 0, 0.646269143, 0)
+KickMenu.Size = UDim2.new(0, 341, 0, 179)
+KickMenu.Visible = false
+
+Input.Name = "Input"
+Input.Parent = KickMenu
+Input.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Input.Position = UDim2.new(0.0410557203, 0, 0.0609756075, 0)
+Input.Size = UDim2.new(0, 312, 0, 47)
+Input.Font = Enum.Font.FredokaOne
+Input.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Input.PlaceholderText = "Player"
+Input.Text = ""
+Input.TextColor3 = Color3.fromRGB(255, 255, 255)
+Input.TextScaled = true
+Input.TextSize = 14.000
+Input.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 15)
+UICorner_5.Parent = Input
+
+Button.Name = "Button"
+Button.Parent = KickMenu
+Button.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Button.BackgroundTransparency = 1.000
+Button.Position = UDim2.new(0.290322572, 0, 0.716412246, 0)
+Button.Size = UDim2.new(0, 141, 0, 50)
+Button.Font = Enum.Font.FredokaOne
+Button.Text = "Kick"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+
+Reason.Name = "Reason"
+Reason.Parent = KickMenu
+Reason.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+Reason.Position = UDim2.new(0.0410557203, 0, 0.368238181, 0)
+Reason.Size = UDim2.new(0, 312, 0, 47)
+Reason.Font = Enum.Font.FredokaOne
+Reason.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Reason.PlaceholderText = "Reason"
+Reason.Text = ""
+Reason.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reason.TextScaled = true
+Reason.TextSize = 14.000
+Reason.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 15)
+UICorner_6.Parent = Reason
+
+UICorner_7.CornerRadius = UDim.new(0, 15)
+UICorner_7.Parent = KickMenu
+
+KillMenu.Name = "KillMenu"
+KillMenu.Parent = BlueberryAllInOne
+KillMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillMenu.BackgroundTransparency = 1.000
+KillMenu.Position = UDim2.new(0.482184023, 0, 0.646306813, 0)
+KillMenu.Size = UDim2.new(0, 248, 0, 170)
+KillMenu.Visible = false
+KillMenu.Image = "rbxassetid://2851926732"
+KillMenu.ImageColor3 = Color3.fromRGB(0, 0, 0)
+KillMenu.ImageTransparency = 0.250
+KillMenu.ScaleType = Enum.ScaleType.Slice
+KillMenu.SliceCenter = Rect.new(12, 12, 12, 12)
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = KillMenu
+PlayerName.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+PlayerName.BorderSizePixel = 0
+PlayerName.Position = UDim2.new(0.0967741907, 0, 0.152100846, 0)
+PlayerName.Size = UDim2.new(0, 200, 0, 50)
+PlayerName.ZIndex = 2
+PlayerName.Font = Enum.Font.FredokaOne
+PlayerName.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.PlaceholderText = "Player Username"
+PlayerName.Text = ""
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 15)
+UICorner_8.Parent = PlayerName
+
+Kill.Name = "Kill"
+Kill.Parent = KillMenu
+Kill.BackgroundColor3 = Color3.fromRGB(141, 255, 142)
+Kill.BackgroundTransparency = 1.000
+Kill.BorderSizePixel = 0
+Kill.Position = UDim2.new(0.225806445, 0, 0.452101052, 0)
+Kill.Size = UDim2.new(0, 136, 0, 93)
+Kill.ZIndex = 2
+Kill.Font = Enum.Font.FredokaOne
+Kill.Text = "Kill"
+Kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kill.TextScaled = true
+Kill.TextSize = 14.000
+Kill.TextWrapped = true
+
+Kill_Roundify_12px.Name = "Kill_Roundify_12px"
+Kill_Roundify_12px.Parent = Kill
+Kill_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Kill_Roundify_12px.BackgroundTransparency = 1.000
+Kill_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Kill_Roundify_12px.Image = "rbxassetid://2851926732"
+Kill_Roundify_12px.ImageColor3 = Color3.fromRGB(141, 255, 142)
+Kill_Roundify_12px.ImageTransparency = 1.000
+Kill_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Kill_Roundify_12px.SliceCenter = Rect.new(12, 12, 12, 12)
+
+WalkspeedMenu.Name = "WalkspeedMenu"
+WalkspeedMenu.Parent = BlueberryAllInOne
+WalkspeedMenu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WalkspeedMenu.BackgroundTransparency = 0.250
+WalkspeedMenu.Position = UDim2.new(0.566569507, 0, 0.646969676, 0)
+WalkspeedMenu.Size = UDim2.new(0, 162, 0, 107)
+WalkspeedMenu.Visible = false
+
+TextBox.Parent = WalkspeedMenu
+TextBox.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 5
+TextBox.Position = UDim2.new(1.23456788, -200, 0.728971958, -50)
+TextBox.Size = UDim2.new(0, 162, 0, 50)
+TextBox.Font = Enum.Font.FredokaOne
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderText = "Walkspeed (DEFAULT IS 16!)"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 20.000
+TextBox.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 15)
+UICorner_9.Parent = TextBox
+
+UICorner_10.CornerRadius = UDim.new(0, 15)
+UICorner_10.Parent = WalkspeedMenu
+
+FPSCounterText.Name = "FPSCounterText"
+FPSCounterText.Parent = BlueberryAllInOne
+FPSCounterText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPSCounterText.BackgroundTransparency = 1.000
+FPSCounterText.Position = UDim2.new(-0.000471711159, 0, 0.950845122, 0)
+FPSCounterText.Size = UDim2.new(0.0699397027, 0, 0.0478087701, 0)
+FPSCounterText.Visible = false
+FPSCounterText.Font = Enum.Font.SourceSansBold
+FPSCounterText.Text = "60 FPS"
+FPSCounterText.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPSCounterText.TextScaled = true
+FPSCounterText.TextSize = 14.000
+FPSCounterText.TextStrokeTransparency = 0.000
+FPSCounterText.TextWrapped = true
+FPSCounterText.TextXAlignment = Enum.TextXAlignment.Right
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = BlueberryAllInOne
+OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.BackgroundTransparency = 1.000
+OpenButton.Position = UDim2.new(0.805636525, 0, 0.924242437, 0)
+OpenButton.Size = UDim2.new(0, 200, 0, 50)
+OpenButton.Visible = false
+OpenButton.Font = Enum.Font.FredokaOne
+OpenButton.Text = "Open Blueberry"
+OpenButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14.000
+OpenButton.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Parent = OpenButton
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = BlueberryAllInOne
+CloseButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BackgroundTransparency = 0.250
+CloseButton.Position = UDim2.new(0.798833787, 0, 0.571212173, 0)
+CloseButton.Size = UDim2.new(0, 200, 0, 50)
+CloseButton.Visible = false
+CloseButton.Font = Enum.Font.FredokaOne
+CloseButton.Text = "Close Blueberry"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 170, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Parent = CloseButton
+
+UICorner_11.CornerRadius = UDim.new(0, 10)
+UICorner_11.Parent = CloseButton
+
+-- Scripts:
+
+local function QRJHM_fake_script() -- Start.PlayScript 
+	local script = Instance.new('LocalScript', Start)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.RadioMusic.SoundId = "rbxassetid://"..script.Parent.Parent.SongID.Text
+		script.Parent.Parent.Parent.RadioMusic:Play()
+	end)
+end
+coroutine.wrap(QRJHM_fake_script)()
+local function GMPUMR_fake_script() -- Stop.StopScript 
+	local script = Instance.new('LocalScript', Stop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.RadioMusic:Stop()
+	end)
+end
+coroutine.wrap(GMPUMR_fake_script)()
+local function KITNPN_fake_script() -- RadioOpen.RadioOpenScript 
+	local script = Instance.new('LocalScript', RadioOpen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.Radio.Visible == true then
+			script.Parent.Parent.Parent.Radio.Visible = false
+		else
+			script.Parent.Parent.Parent.Radio.Visible = true
+		end
+	end)
+end
+coroutine.wrap(KITNPN_fake_script)()
+local function EMIVZRE_fake_script() -- KickMenuOpen.KickMenuOpenScript 
+	local script = Instance.new('LocalScript', KickMenuOpen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.KickMenu.Visible == true then
+			script.Parent.Parent.Parent.KickMenu.Visible = false
+		else
+			script.Parent.Parent.Parent.KickMenu.Visible = true
+		end
+	end)
+end
+coroutine.wrap(EMIVZRE_fake_script)()
+local function MSGUFOZ_fake_script() -- KillMenuOpen.KillMenuOpenScript 
+	local script = Instance.new('LocalScript', KillMenuOpen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.KillMenu.Visible == true then
+			script.Parent.Parent.Parent.KillMenu.Visible = false
+		else
+			script.Parent.Parent.Parent.KillMenu.Visible = true
+		end
+	end)
+end
+coroutine.wrap(MSGUFOZ_fake_script)()
+local function COZABNK_fake_script() -- SpeedMenuOpen.SpeedMenuOpenScript 
+	local script = Instance.new('LocalScript', SpeedMenuOpen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.WalkspeedMenu.Visible == true then
+			script.Parent.Parent.Parent.WalkspeedMenu.Visible = false
+		else
+			script.Parent.Parent.Parent.WalkspeedMenu.Visible = true
+		end
+	end)
+end
+coroutine.wrap(COZABNK_fake_script)()
+local function FQQH_fake_script() -- FPSMenuOpen.FPSMenuOpenScript 
+	local script = Instance.new('LocalScript', FPSMenuOpen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.FPSCounterText.Visible == true then
+			script.Parent.Parent.Parent.FPSCounterText.Visible = false
+		else
+			script.Parent.Parent.Parent.FPSCounterText.Visible = true
+		end
+	end)
+end
+coroutine.wrap(FQQH_fake_script)()
+local function BOEIINV_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	--by gringlestick2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.RemoteEvent:FireServer(script.Parent.Parent.Input.Text, script.Parent.Parent.Reason.Text)
+	end)
+end
+coroutine.wrap(BOEIINV_fake_script)()
+local function PONWMOB_fake_script() -- KickMenu.Script 
+	local script = Instance.new('Script', KickMenu)
+
+	script.Parent.RemoteEvent.OnServerEvent:Connect(function(player, input, reason)
+		local players = game:GetService("Players")
+	    players[input]:Kick(reason)
+	end)
+end
+coroutine.wrap(PONWMOB_fake_script)()
+local function SFSW_fake_script() -- KickMenu.Script 
+	local script = Instance.new('Script', KickMenu)
+
+	script.Parent.RemoteEvent2.OnServerEvent:Connect(function(player, input, reason)
+		local players = game:GetService("Players")
+		local bans = {}
+		players[input]:Kick(reason)
+		table.insert(bans, input)
+		while true do wait()
+			game.Players.PlayerAdded:Connect(function(plr)
+				if plr.Name == bans[1] then
+					plr:Kick('Blacklisted from the server')
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(SFSW_fake_script)()
+local function NTZPT_fake_script() -- Kill.KillScript 
+	local script = Instance.new('LocalScript', Kill)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players:FindFirstChild(script.Parent.Parent.PlayerName.Text).Character.Humanoid.Health = 0
+	end)
+end
+coroutine.wrap(NTZPT_fake_script)()
+local function LWOZX_fake_script() -- WalkspeedMenu.LocalScript 
+	local script = Instance.new('LocalScript', WalkspeedMenu)
+
+	wait(2)
+	while true do
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.TextBox.Text -- changes value to player entered text
+		if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed == 0 then -- checks if there's no walkspeed
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16 -- changes walkspeed if there's none
+		end
+		wait()
+	end
+end
+coroutine.wrap(LWOZX_fake_script)()
+local function TVBQKN_fake_script() -- FPSCounterText.FPSCounterScript 
+	local script = Instance.new('LocalScript', FPSCounterText)
+
+	local fps = 0
+	local rs = game:GetService'RunService'
+	
+	function updateFPS()
+		fps = fps + 1
+	end
+	
+	rs.RenderStepped:connect(updateFPS)
+	
+	while wait'1' do
+		script.Parent.Text = fps .." FPS"
+		fps = 0
+	end
+end
+coroutine.wrap(TVBQKN_fake_script)()
+local function XAWKOE_fake_script() -- OpenButton.OpenScript 
+	local script = Instance.new('LocalScript', OpenButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Visible = false
+		script.Parent.Parent.CloseButton.Visible = true
+	end)
+end
+coroutine.wrap(XAWKOE_fake_script)()
+local function LAZLZR_fake_script() -- CloseButton.CloseScript 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Visible = false
+		script.Parent.Parent.OpenButton.Visible = true
+	end)
+end
+coroutine.wrap(LAZLZR_fake_script)()
